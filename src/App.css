@@ -36,3 +36,114 @@
     transform: rotate(360deg);
   }
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+.wrapper{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container>.card{
+  width: 270px;
+  /* height: auto; */
+  padding: 25px 30px;
+  color: white;
+}
+
+.card>h1,p,img{
+  margin-bottom: 30px;  
+}
+h1{
+ font-family: 'Big Shoulders Display', cursive;
+}
+p{
+  width: 200px;
+  font-size: 15px;
+}
+img{
+  width: 50px;
+}
+
+.sedans{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: hsl(31, 77%, 52%);
+}
+
+
+
+.suvs{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: hsl(179, 100%, 13%);
+}
+
+button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.sedans>button{
+  color:  hsl(31, 77%, 52%);
+}
+.suvs>button{
+  color:   hsl(184, 100%, 22%);
+}
+
+.luxury>button{
+  color:   hsl(179, 100%, 13%);
+}
+
+.sedans>button:hover{
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid white;
+}
+
+.suvs>button:hover{
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid white; 
+}
+
+.luxury>button:hover{
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid white;
+  
+}
+ 
+@media (max-width: 768px){
+  .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper{
+  height: 100%
+}
+
+} 
